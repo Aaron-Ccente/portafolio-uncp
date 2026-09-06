@@ -1,0 +1,305 @@
+/* HERO */
+
+.hero {
+  min-height: calc(100vh - 90px);
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  align-items: center;
+  gap: 4rem;
+
+  padding: 5rem 10%;
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+  max-width: 850px;
+}
+
+
+/* SALUDO */
+
+.hero-greeting {
+  margin-bottom: 1rem;
+  color: var(--color-gold);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* NOMBRE */
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+
+  color: var(--color-white);
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero h1 span {
+  display: block;
+  color: var(--color-gold);
+}
+
+/* PROFESIÓN */
+
+.hero h2 {
+  margin-bottom: 1.5rem;
+  color: var(--color-text-muted);
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  font-weight: 400;
+}
+
+/* DESCRIPCIÓN */
+
+.hero-description {
+  max-width: 650px;
+  margin-bottom: 2rem;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* INFORMACIÓN */
+
+.hero-info {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.hero-info-title {
+  color: var(--color-gold);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* BOTONES */
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--color-gold);
+  border-radius: 5px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+
+/* Botón principal */
+
+.btn-primary {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-gold-light);
+}
+
+
+/* Botón secundario */
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-gold);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+}
+
+
+/* REDES SOCIALES */
+
+.hero-social {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-social a {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.hero-social a:hover {
+  color: var(--color-gold);
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: min(100%, 420px);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 1px solid var(--color-gold);
+  border-radius: 50%;
+  background-color: var(--color-black-light);
+}
+
+
+/* Imagen */
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* Borde decorativo */
+
+.hero-image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid var(--color-gold);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.7fr);
+    gap: 2.5rem;
+    padding: 4rem 7%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+  }
+
+  .hero-info {
+    gap: 2rem;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 4rem 8%;
+  }
+
+
+  /* Imagen arriba */
+
+  .hero-image {
+    grid-row: 1;
+  }
+
+  .hero-content {
+    grid-row: 2;
+  }
+
+
+  .hero-image-wrapper {
+    width: min(70vw, 320px);
+  }
+
+
+  .hero h1 {
+    font-size: clamp(2.7rem, 12vw, 4rem);
+  }
+
+
+  .hero-info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+
+  .btn {
+    width: 100%;
+  }
+
+
+  .hero-social {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+/* 
+   MOBILE PEQUEÑO
+    */
+
+@media (max-width: 480px) {
+
+  .hero {
+    padding: 3rem 6%;
+  }
+
+  .hero-image-wrapper {
+    width: 240px;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+}
