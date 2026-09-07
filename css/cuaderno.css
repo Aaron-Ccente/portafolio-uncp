@@ -1,0 +1,241 @@
+/* Cuaderno */
+.cuaderno {
+  width: 100%;
+  min-height: 100vh;
+  padding: 6rem 8%;
+}
+
+/* Header */
+
+.cuaderno-header {
+  max-width: 800px;
+  margin-bottom: 5rem;
+}
+
+/* Label */
+
+.cuaderno-label {
+  margin-bottom: 1rem;
+  color: var(--color-gold);
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+/* Title */
+
+.cuaderno-header h1 {
+  margin-bottom: 1.5rem;
+  color: var(--color-white);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+}
+
+/* Description */
+
+.cuaderno-description {
+  max-width: 650px;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Weeks */
+
+.weeks {
+  width: 100%;
+}
+
+/* Grid */
+
+.weeks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Card */
+
+.week-card {
+  overflow: hidden;
+  background-color: var(--color-black-light);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  transition:
+    transform var(--transition-normal),
+    border-color var(--transition-normal);
+}
+
+.week-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-gold);
+}
+
+/* Image */
+
+.week-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: var(--color-black-soft);
+}
+
+/* Image */
+
+.week-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.week-card:hover .week-image img {
+  transform: scale(1.05);
+}
+
+/* Number */
+
+.week-number {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.4rem 0.7rem;
+  background-color: var(--color-black);
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Content */
+
+.week-content {
+  padding: 1.5rem;
+}
+
+/* Small title */
+
+.week-title {
+  margin-bottom: 0.5rem;
+  color: var(--color-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Card title */
+
+.week-content h2 {
+  margin-bottom: 1rem;
+  color: var(--color-white);
+  font-size: 1.3rem;
+}
+
+/* Description */
+
+.week-description {
+  min-height: 75px;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* Tags */
+
+.week-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Tag */
+
+.week-tags span {
+  padding: 0.35rem 0.65rem;
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  transition:
+    border-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.week-card:hover .week-tags span {
+  border-color: var(--color-gold-dark);
+  color: var(--color-gold);
+}
+
+/* Week div */
+.week-div{
+    display: flex;
+    justify-content: end;
+}
+
+/* Link */
+
+.week-link {
+  color: var(--color-gold);
+  border: 2px solid var(--color-gold);
+  padding: 4px 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.week-link:hover {
+  color: var(--color-gold-light);
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .cuaderno {
+    padding: 5rem 6%;
+  }
+
+  .weeks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .cuaderno {
+    padding: 4rem 6%;
+  }
+
+  .cuaderno-header {
+    margin-bottom: 3rem;
+  }
+
+  .weeks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .week-description {
+    min-height: auto;
+  }
+}
+
+/* Mobile small */
+
+@media (max-width: 400px) {
+  .cuaderno {
+    padding: 3rem 5%;
+  }
+
+  .week-content {
+    padding: 1.25rem;
+  }
+}
