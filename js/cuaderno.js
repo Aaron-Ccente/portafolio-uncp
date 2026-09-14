@@ -1,10 +1,15 @@
 const weeks = [
   {
     title: "Semana 01",
-    description:
-      "Fundamentos de la Tecnología Web",
+    description: "Fundamentos de la Tecnología Web",
     image: "/assets/images/cuaderno/semana01/semana-01-actividad-02-img-01.png",
     tags: ["HTML", "Web", "Introducción", "CSS", "JS"],
+  },
+  {
+    title: "Semana 02",
+    description: "Reto semana 2 | ELICITACIÓN Y ANÁLISIS DE REQUERIMIENTOS",
+    image: "/assets/images/cuaderno/semana02/semana-02-actividad-01-img-01.png",
+    tags: ["HTML", "Web", "Reto", "CSS", "JS", "Flex", "Grid", "requerimientos", "Grupo"],
   },
 ];
 
