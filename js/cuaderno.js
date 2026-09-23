@@ -11,6 +11,12 @@ const weeks = [
     image: "/assets/images/cuaderno/semana02/semana-02-actividad-01-img-01.png",
     tags: ["HTML", "Web", "Reto", "CSS", "JS", "Flex", "Grid", "requerimientos", "Grupo"],
   },
+  {
+    title: "Semana 03",
+    description: "Reto semana 3 | Práctica grupal usando Tailwindcss",
+    image: "/assets/images/cuaderno/semana03/semana-03-actividad-01-img-01.png",
+    tags: ["HTML", "Web", "Reto", "Tailwindcss", "Grupo", "GitHub"],
+  },
 ];
 
 function createWeekCard(week, index) {
