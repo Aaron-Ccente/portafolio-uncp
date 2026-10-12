@@ -22,6 +22,12 @@ const weeks = [
     description: "Reto semana 4 | Práctica grupal y tarea de laboratorio",
     image: "/assets/images/cuaderno/semana04/semana-04-actividad-01-img-01.png",
     tags: ["HTML", "Web", "Reto", "Tailwindcss", "Grupo", "GitHub", "SEO", "Performance"],
+  },
+  {
+    title: "Semana 05",
+    description: "Creación de proyectos con Create React App, Vite y Next.js; práctica de React con CSR, JSX, Props y Children",
+    image: "/assets/images/cuaderno/semana05/semana-05-actividad-02-img-01.png",
+    tags: ["React", "CSR", "JSX", "Props", "Children", "Vite", "Next.js"],
   }
 ];
 
