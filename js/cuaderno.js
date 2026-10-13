@@ -28,6 +28,12 @@ const weeks = [
     description: "Creación de proyectos con Create React App, Vite y Next.js; práctica de React con CSR, JSX, Props y Children",
     image: "/assets/images/cuaderno/semana05/semana-05-actividad-02-img-01.png",
     tags: ["React", "CSR", "JSX", "Props", "Children", "Vite", "Next.js"],
+  },
+  {
+    title: "Semana 06",
+    description: "Estructuras HTML con Props y Children; desarrollo de SPA con React, Vite y consumo de API",
+    image: "/assets/images/cuaderno/semana06/semana-06-actividad-02-img-02.png",
+    tags: ["React", "SPA", "Vite", "Props", "Children", "CSR", "API"],
   }
 ];
 
