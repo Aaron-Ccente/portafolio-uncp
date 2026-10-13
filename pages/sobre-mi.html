@@ -3,12 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mi</title>
+    <title>Sobre mí | Aaron Ccente Rojas</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/sobre-mi.css">
 </head>
 <body>
     <div id="navbar"></div>
+
+    <main class="about-page">
+        <section class="about-intro" aria-labelledby="about-title">
+            <p class="about-eyebrow">Conoce mi perfil</p>
+            <h1 id="about-title">Sobre <span>mí</span></h1>
+            <p class="about-lead">
+                Soy Juan Aarón Ccente Rojas, estudiante de Ingeniería de Sistemas
+                en la Universidad Nacional del Centro del Perú y desarrollador web.
+                Me enfoco en crear experiencias digitales modernas, accesibles y
+                útiles, cuidando tanto la interfaz como el funcionamiento del backend.
+            </p>
+            <p class="about-copy">
+                He colaborado en proyectos para organizaciones de Huancayo y Lima,
+                participando en el análisis de requerimientos, el desarrollo de
+                aplicaciones y la mejora de plataformas existentes. Disfruto aprender,
+                resolver problemas y convertir las necesidades de las personas en
+                soluciones claras y mantenibles.
+            </p>
+            <a
+                class="about-download"
+                href="../assets/cv/CV_CCENTE%20ROJAS%20JUAN%20AARON.pdf"
+                download="CV_Juan_Aaron_Ccente_Rojas.pdf"
+            >
+                Descargar CV
+            </a>
+        </section>
+
+        <section class="about-section" aria-labelledby="experience-title">
+            <div class="section-heading">
+                <p class="about-eyebrow">Experiencia</p>
+                <h2 id="experience-title">Proyectos en los que he participado</h2>
+            </div>
+
+            <div class="experience-grid">
+                <article class="experience-card">
+                    <p class="experience-date">Septiembre – diciembre 2025 · Huancayo</p>
+                    <h3>Plataforma de gestión documentaria · OFICRI</h3>
+                    <p>
+                        Lideré el análisis de requerimientos y diseñé la arquitectura
+                        inicial de una plataforma para gestionar oficios. Desarrollé
+                        el backend con Node.js y MySQL, y el frontend con React y
+                        Tailwind CSS.
+                    </p>
+                    <p>
+                        También implementé autenticación y autorización por roles con
+                        JWT, además de gráficos estadísticos para apoyar la toma de
+                        decisiones.
+                    </p>
+                </article>
+
+                <article class="experience-card">
+                    <p class="experience-date">Junio – septiembre 2025 · Remoto</p>
+                    <h3>Plataforma web Contigo Voy · NEONHOUSELED SAC</h3>
+                    <p>
+                        Colaboré en el desarrollo y optimización de la plataforma del
+                        centro psicológico Contigo Voy, creando interfaces responsive
+                        con React, TypeScript y Tailwind CSS e integrando servicios
+                        mediante APIs REST.
+                    </p>
+                    <p>
+                        Realicé mejoras y mantenimiento en el backend con Laravel y
+                        añadí visualizaciones estadísticas para el seguimiento de
+                        pacientes.
+                    </p>
+                </article>
+
+                <article class="experience-card experience-card-featured">
+                    <p class="experience-date">Mayo 2025 · Huancayo</p>
+                    <h3>Diseño y desarrollo web · KoreanMania</h3>
+                    <p>
+                        Diseñé la experiencia de usuario en Figma y desarrollé el
+                        frontend con React y Tailwind CSS. Optimicé imágenes para
+                        mejorar la carga y obtuve puntuaciones de 100 en Performance,
+                        Accessibility, Best Practices y SEO en Lighthouse.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-details" aria-label="Formación y habilidades">
+            <article class="detail-card">
+                <p class="about-eyebrow">Formación</p>
+                <h2>Ingeniería de Sistemas</h2>
+                <p>Estudiante en la Universidad Nacional del Centro del Perú (UNCP).</p>
+                <p>Huancayo, Perú</p>
+            </article>
+
+            <article class="detail-card">
+                <p class="about-eyebrow">Tecnologías</p>
+                <h2>Herramientas que utilizo</h2>
+                <ul class="skill-list" aria-label="Tecnologías">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Laravel</li>
+                    <li>Next.js</li>
+                    <li>Tailwind CSS</li>
+                    <li>HTML5 y CSS3</li>
+                    <li>MySQL y SQL</li>
+                    <li>Firebase</li>
+                    <li>Git</li>
+                    <li>Figma</li>
+                </ul>
+            </article>
+
+            <article class="detail-card">
+                <p class="about-eyebrow">Habilidades</p>
+                <h2>Cómo trabajo</h2>
+                <ul class="strength-list">
+                    <li>Colaboración y comunicación efectiva</li>
+                    <li>Resolución de problemas y pensamiento crítico</li>
+                    <li>Organización y gestión del tiempo</li>
+                    <li>Atención al detalle y aprendizaje continuo</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
     <script src="../js/components.js" defer></script>
-    
 </body>
 </html>
