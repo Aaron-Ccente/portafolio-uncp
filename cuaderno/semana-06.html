@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuaderno | Semana 06</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="/css/cuaderno/semana-general.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <main class="week">
+      <header class="week-header">
+        <p class="week-label">SEMANA 06</p>
+
+        <h1>Aplicaciones SPA con React</h1>
+
+        <p class="week-description">
+          Prácticas de estructura HTML, composición de componentes con props y
+          children, y desarrollo de una SPA en React con navegación y datos de
+          usuarios.
+        </p>
+      </header>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">01</span>
+
+          <div>
+            <p class="section-label">APRENDIZAJE</p>
+            <h2>Temas aprendidos</h2>
+          </div>
+        </div>
+
+        <div class="topics">
+          <article class="topic">
+            <span class="topic-number">Tema 01</span>
+
+            <h3>Estructura HTML y composición con componentes</h3>
+
+            <p>
+              Se practicó la organización de una página con elementos
+              semánticos de HTML, como <strong>section</strong>,
+              <strong>nav</strong>, <strong>article</strong>,
+              <strong>aside</strong> y <strong>footer</strong>. También se
+              representó la interfaz mediante componentes anidados.
+            </p>
+
+            <h4>Props y children</h4>
+
+            <p>
+              Las <strong>props</strong> permiten transmitir datos a los
+              componentes, mientras que <strong>children</strong> permite
+              incluir contenido anidado. Ambos recursos ayudan a reutilizar
+              componentes sin perder flexibilidad en la estructura.
+            </p>
+          </article>
+
+          <article class="topic">
+            <span class="topic-number">Tema 02</span>
+
+            <h3>SPA con React, Vite y Client-Side Rendering</h3>
+
+            <p>
+              Se trabajó con una aplicación de página única (<strong>SPA</strong>)
+              creada con React y Vite. La navegación cambia las vistas desde el
+              cliente y evita recargar el documento completo en cada sección.
+            </p>
+
+            <h4>Componentes y ciclo de vida del DOM</h4>
+
+            <p>
+              Se organizó la interfaz en componentes escritos con
+              <strong>JSX</strong>, y se revisó el comportamiento del
+              <strong>Client-Side Rendering (CSR)</strong> y las actualizaciones
+              que React realiza en el DOM al cambiar de vista o de datos.
+            </p>
+          </article>
+
+          <article class="topic">
+            <span class="topic-number">Tema 03</span>
+
+            <h3>Navegación, API y estilos de interfaz</h3>
+
+            <p>
+              Se exploró la navegación entre vistas de inicio, lista y
+              formulario, junto con la consulta de datos de usuarios desde una
+              API de prueba usando <strong>axios</strong>. La lista resultante
+              muestra información recibida de forma dinámica.
+            </p>
+
+            <h4>Estilado y validación</h4>
+
+            <p>
+              Se consideraron alternativas de estilado como CSS Modules,
+              Tailwind e inline styles. El navegador y sus DevTools permiten
+              comprobar la interfaz y revisar errores, solicitudes de red y
+              rendimiento.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">02</span>
+
+          <div>
+            <p class="section-label">LABORATORIO</p>
+            <h2>Actividades de laboratorio</h2>
+          </div>
+        </div>
+
+        <div class="activities">
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 06 · Actividad 01</span>
+
+              <h3>Estructuras HTML con Props y Children</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  Se construyeron estructuras de página con etiquetas
+                  semánticas de HTML y se practicó su composición a través de
+                  componentes. La actividad también mostró el paso de datos
+                  mediante props y la inclusión de contenido anidado con
+                  children.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Procedimiento</h4>
+
+                <ol>
+                  <li>
+                    Organizar las áreas principales de la página con elementos
+                    semánticos como nav, section, article, aside y footer.
+                  </li>
+                  <li>
+                    Separar las distintas partes visuales en componentes
+                    anidados.
+                  </li>
+                  <li>
+                    Pasar la información necesaria a los componentes mediante
+                    props.
+                  </li>
+                  <li>
+                    Componer contenido interno utilizando children y comprobar
+                    la estructura resultante.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  Se representaron una estructura semántica de página y una
+                  jerarquía de componentes anidados que muestra datos recibidos
+                  mediante props.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana06/semana-06-actividad-01-img-01.png"
+                    alt="Estructura semántica de página con section, nav, article, aside y footer"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana06/semana-06-actividad-01-img-02.png"
+                    alt="Componentes anidados que presentan datos recibidos por props"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 06 · Actividad 02</span>
+
+              <h3>Desarrollo de una SPA y uso de una API con React</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  Se desarrolló una aplicación frontend de página única con
+                  React, configurada con Vite y npm o pnpm. La práctica aplicó
+                  arquitectura de componentes con JSX, transmisión de datos con
+                  props, composición con children y estrategias de estilado
+                  como CSS Modules, Tailwind o estilos inline.
+                </p>
+
+                <p>
+                  La aplicación incorpora navegación entre vistas, consulta de
+                  datos de una API y una interfaz de formulario. Se validó el
+                  Client-Side Rendering (CSR) observando la interacción y el
+                  ciclo de vida del DOM.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Recursos y herramientas</h4>
+
+                <ul>
+                  <li>Node.js LTS (20.x o superior), con npm o pnpm.</li>
+                  <li>
+                    Visual Studio Code con ES7+ React Snippets, React Developer
+                    Tools, Error Lens y REST Client.
+                  </li>
+                  <li>
+                    Navegador moderno y DevTools: Network, Performance y
+                    Console.
+                  </li>
+                  <li>
+                    Proyecto base con Vite, React, react-router-dom y axios.
+                  </li>
+                  <li>
+                    API de prueba: JSONPlaceholder
+                    (jsonplaceholder.typicode.com/users) o DummyJSON
+                    (dummyjson.com/products).
+                  </li>
+                  <li>Documentación: react.dev, reactrouter.com y axios-http.com.</li>
+                  <li>Conexión a internet para consultar la API.</li>
+                </ul>
+              </div>
+
+              <div class="activity-block">
+                <h4>Procedimiento</h4>
+
+                <ol>
+                  <li>
+                    Preparar el entorno de desarrollo e iniciar el proyecto base
+                    de React con Vite.
+                  </li>
+                  <li>
+                    Crear componentes para las vistas de inicio, lista de
+                    usuarios y formulario, y configurar la navegación con
+                    react-router-dom.
+                  </li>
+                  <li>
+                    Definir componentes reutilizables y transmitir datos con
+                    props, utilizando children para componer su contenido.
+                  </li>
+                  <li>
+                    Consultar la API seleccionada con axios y representar los
+                    resultados en la vista de lista.
+                  </li>
+                  <li>
+                    Aplicar una estrategia de estilos y probar la interacción
+                    y el renderizado desde el navegador.
+                  </li>
+                  <li>
+                    Revisar solicitudes, errores y rendimiento con las DevTools
+                    para validar el comportamiento del CSR y del DOM.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  Se obtuvo una SPA con navegación entre inicio, lista de
+                  usuarios y formulario. La lista presenta usuarios recibidos
+                  desde la API y el formulario muestra la vista para ingresar
+                  un nuevo usuario.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana06/semana-06-actividad-02-img-01.png"
+                    alt="Vista de inicio de la aplicación SPA"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana06/semana-06-actividad-02-img-02.png"
+                    alt="Vista de lista con usuarios obtenidos desde una API"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana06/semana-06-actividad-02-img-03.png"
+                    alt="Vista del formulario para ingresar un nuevo usuario"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reflection-section">
+        <div class="section-header">
+          <span class="section-number">03</span>
+
+          <div>
+            <p class="section-label">REFLEXIÓN</p>
+            <h2>Reflexión personal</h2>
+          </div>
+        </div>
+
+        <div class="reflection">
+          <article class="reflection-item">
+            <h3>¿Qué aprendí?</h3>
+
+            <p>
+              Aprendí a organizar estructuras HTML semánticas y a trasladar esa
+              organización a componentes reutilizables. Reforcé cómo se
+              comparten datos con props y cómo children permite componer
+              componentes con contenido anidado.
+            </p>
+
+            <p>
+              También aprendí a estructurar una SPA con React y Vite, navegar
+              entre vistas y consumir datos desde una API. Observar el
+              renderizado del lado del cliente me ayudó a comprender cómo las
+              actualizaciones de la aplicación se reflejan en el DOM.
+            </p>
+          </article>
+
+          <article class="reflection-item">
+            <h3>¿Cómo aprendí?</h3>
+
+            <p>
+              Aprendí mediante ejercicios de composición: primero organicé el
+              contenido con elementos semánticos y luego lo distribuí entre
+              componentes, pasando datos y contenido anidado.
+            </p>
+
+            <p>
+              Para la SPA, probé las diferentes vistas y la consulta de usuarios
+              desde el navegador. Las DevTools y los mensajes de la consola
+              permiten revisar solicitudes de red, errores y el comportamiento
+              de la interfaz al navegar.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="../js/components.js" defer></script>
+  </body>
+</html>
