@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuaderno | Semana 07</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="/css/cuaderno/semana-general.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <main class="week">
+      <header class="week-header">
+        <p class="week-label">SEMANA 07</p>
+
+        <h1>Hooks y gestión de estado en React</h1>
+
+        <p class="week-description">
+          Evaluación de un sistema de gestión de biblioteca y laboratorios para
+          aplicar Hooks nativos y personalizados, controlar el estado complejo
+          y optimizar el renderizado de aplicaciones React.
+        </p>
+      </header>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">01</span>
+
+          <div>
+            <p class="section-label">APRENDIZAJE</p>
+            <h2>Temas aprendidos</h2>
+          </div>
+        </div>
+
+        <div class="topics">
+          <article class="topic">
+            <span class="topic-number">Tema 01</span>
+
+            <h3>Ciclo de renderizado y efectos</h3>
+
+            <p>
+              Los Hooks permiten incorporar estado y otros comportamientos a
+              componentes funcionales. <strong>useEffect</strong> ejecuta
+              efectos secundarios después del renderizado y su función de
+              limpieza ayuda a liberar recursos, cancelar suscripciones o
+              retirar eventos cuando cambian las dependencias o se desmonta el
+              componente.
+            </p>
+          </article>
+
+          <article class="topic">
+            <span class="topic-number">Tema 02</span>
+
+            <h3>Estado compartido y optimización</h3>
+
+            <p>
+              <strong>useContext</strong> comparte preferencias y datos entre
+              componentes sin pasar props por todos los niveles.
+              <strong>useMemo</strong> y <strong>useCallback</strong> permiten
+              memorizar cálculos y funciones cuando es necesario evitar trabajo
+              o renders innecesarios. <strong>useRef</strong> conserva una
+              referencia mutable o permite acceder a un nodo del DOM sin
+              provocar un renderizado.
+            </p>
+          </article>
+
+          <article class="topic">
+            <span class="topic-number">Tema 03</span>
+
+            <h3>Estado complejo y Hooks personalizados</h3>
+
+            <p>
+              <strong>useReducer</strong> organiza transiciones de estado
+              relacionadas mediante acciones, mientras que un Hook
+              personalizado encapsula lógica reutilizable. React DevTools
+              Profiler ayuda a observar los renders y analizar el efecto de las
+              optimizaciones.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">02</span>
+
+          <div>
+            <p class="section-label">ACTIVIDADES</p>
+            <h2>Examen parcial y laboratorios</h2>
+          </div>
+        </div>
+
+        <div class="activities">
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 07 · Actividad 01</span>
+
+              <h3>Examen parcial: Sistema de Gestión de Biblioteca Universitaria</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  Se planteó un sistema web para que la Biblioteca Central
+                  administre el préstamo de libros a estudiantes y docentes.
+                  Los administradores gestionan libros, categorías y
+                  préstamos; los usuarios registrados pueden buscar libros,
+                  solicitar préstamos y consultar su historial.
+                </p>
+
+                <p>
+                  Toda la información se almacena en <strong>Local
+                  Storage</strong>, simulando la persistencia de un sistema
+                  empresarial sin depender de bases de datos externas. El
+                  sistema también genera un comprobante digital por cada
+                  préstamo.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Requerimientos principales</h4>
+
+                <ol>
+                  <li>
+                    Presentar un catálogo de libros con búsqueda por título,
+                    autor o ISBN, filtro por categoría y disponibilidad de
+                    ejemplares.
+                  </li>
+                  <li>
+                    Permitir que un usuario registrado solicite el préstamo de
+                    un libro disponible y consulte su historial de préstamos.
+                  </li>
+                  <li>
+                    Proporcionar módulos de administración para registrar,
+                    editar y eliminar libros, categorías y usuarios, además de
+                    gestionar préstamos e inventario.
+                  </li>
+                  <li>
+                    Persistir los datos del sistema en Local Storage y
+                    actualizar el stock al registrar un préstamo.
+                  </li>
+                  <li>
+                    Generar y mostrar un comprobante digital con los datos del
+                    usuario, el libro y el préstamo realizado.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  Las capturas muestran el catálogo bibliográfico, el módulo
+                  administrativo de libros y la gestión de usuarios para el
+                  sistema de biblioteca.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana07/semana-07-actividad-01-img-01.png"
+                    alt="Catálogo de libros con búsqueda, categorías, disponibilidad y opción de préstamo"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana07/semana-07-actividad-01-img-02.png"
+                    alt="Módulo administrativo para gestionar libros, categorías e inventario"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana07/semana-07-actividad-01-img-03.png"
+                    alt="Módulo para registrar y administrar estudiantes y docentes"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 07 · Actividad 02</span>
+
+              <h3>Laboratorio: Hooks nativos y ciclo de renderizado</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  El laboratorio profundiza en el ciclo de renderizado de React
+                  y el uso estratégico de Hooks nativos. Se aplican
+                  <strong>useEffect</strong> con sus dependencias y limpieza,
+                  <strong>useContext</strong> para el estado global,
+                  <strong>useMemo</strong> y <strong>useCallback</strong> para
+                  optimizar cálculos y funciones, y <strong>useRef</strong>
+                  para conservar referencias sin provocar renders.
+                </p>
+
+                <p>
+                  También se refactoriza lógica compleja con
+                  <strong>useReducer</strong> y se encapsulan comportamientos
+                  reutilizables en Hooks personalizados. El flujo de
+                  re-renderizados se valida con React DevTools Profiler.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Procedimiento</h4>
+
+                <ol>
+                  <li>
+                    Implementar la interfaz de exploración de personajes con
+                    búsqueda, filtros y acciones para gestionar favoritos.
+                  </li>
+                  <li>
+                    Compartir preferencias de tema con useContext y usar
+                    useEffect para sincronizar o limpiar efectos secundarios.
+                  </li>
+                  <li>
+                    Aplicar useMemo y useCallback en operaciones derivadas y
+                    handlers; usar useRef para una referencia mutable o un
+                    elemento del DOM.
+                  </li>
+                  <li>
+                    Organizar las transiciones de estado relacionadas mediante
+                    useReducer y extraer lógica común a Hooks personalizados.
+                  </li>
+                  <li>
+                    Medir el flujo de renders con React DevTools Profiler y
+                    verificar que las optimizaciones respondan a cambios
+                    relevantes.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  La interfaz de exploración permite buscar personajes,
+                  filtrarlos y administrar favoritos, con una preferencia de
+                  tema compartida. El análisis con Profiler permite revisar el
+                  comportamiento de los componentes durante las interacciones.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana07/semana-07-actividad-02-img-01.png"
+                    alt="Explorador de personajes con búsqueda, filtro, tema y acciones de favoritos"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 07 · Actividad 03</span>
+
+              <h3>Laboratorio: Dashboard de Gestión con Estado Complejo</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  Se desarrolla un dashboard de tareas que combina estado
+                  complejo y preferencias globales. <strong>useReducer</strong>
+                  administra las acciones de agregar, eliminar, filtrar y
+                  ordenar tareas, mientras que <strong>useState</strong>
+                  controla el estado local de la interfaz.
+                </p>
+
+                <p>
+                  El dashboard integra <strong>useContext</strong> para el
+                  tema o las preferencias, <strong>useEffect</strong> para
+                  sincronizarlas con Local Storage y limpiar efectos,
+                  <strong>useMemo</strong> para derivar la lista filtrada y
+                  ordenada, <strong>useCallback</strong> para los handlers y
+                  <strong>useRef</strong> para enfocar el campo de entrada sin
+                  generar un render adicional. La persistencia reutilizable se
+                  encapsula en un Hook como useLocalStorage o useDebounce.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Procedimiento</h4>
+
+                <ol>
+                  <li>
+                    Modelar con useReducer la colección de tareas y sus
+                    operaciones de agregar, eliminar, filtrar y ordenar.
+                  </li>
+                  <li>
+                    Gestionar con useState los controles de interfaz y con
+                    useContext el tema claro u oscuro o las preferencias del
+                    usuario.
+                  </li>
+                  <li>
+                    Sincronizar preferencias con Local Storage mediante
+                    useEffect y definir la limpieza de los efectos que la
+                    requieran.
+                  </li>
+                  <li>
+                    Derivar resultados con useMemo, estabilizar handlers con
+                    useCallback y enfocar el campo de nueva tarea con useRef.
+                  </li>
+                  <li>
+                    Crear un Hook personalizado de persistencia o debounce y
+                    comprobar los renders y la interacción del dashboard.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  El panel presenta el estado de las tareas, filtros por
+                  estado, búsqueda, criterios de ordenamiento, resumen y
+                  preferencias visuales. También permite observar el contador
+                  de renders y generar tareas de prueba para analizar el
+                  rendimiento con Profiler.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana07/semana-07-actividad-03-img-01.png"
+                    alt="Dashboard de tareas vacío con filtros, preferencias, resumen y acciones"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana07/semana-07-actividad-03-img-02.png"
+                    alt="Dashboard de tareas con una tarea completada y métricas actualizadas"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reflection-section">
+        <div class="section-header">
+          <span class="section-number">03</span>
+
+          <div>
+            <p class="section-label">REFLEXIÓN</p>
+            <h2>Reflexión personal</h2>
+          </div>
+        </div>
+
+        <div class="reflection">
+          <article class="reflection-item">
+            <h3>¿Qué aprendí?</h3>
+
+            <p>
+              Aprendí a elegir Hooks según la responsabilidad de cada parte de
+              una aplicación: manejar estado local o complejo, compartir
+              preferencias, sincronizar efectos y optimizar cálculos y
+              callbacks. También reforcé el uso de Local Storage para
+              conservar datos y preferencias en el navegador.
+            </p>
+
+            <p>
+              El examen parcial permitió aplicar estos conocimientos en el
+              contexto de una biblioteca universitaria, mientras que los
+              laboratorios mostraron cómo organizar interfaces interactivas y
+              observar sus re-renderizados con React DevTools Profiler.
+            </p>
+          </article>
+
+          <article class="reflection-item">
+            <h3>¿Cómo aprendí?</h3>
+
+            <p>
+              Aprendí mediante la implementación de casos concretos: un sistema
+              de préstamos con roles y persistencia local, una interfaz de
+              exploración y un dashboard de tareas con filtros y ordenamiento.
+              Separar el estado de la interfaz del estado de los datos ayudó a
+              elegir la herramienta adecuada para cada necesidad.
+            </p>
+
+            <p>
+              Finalmente, observé los cambios de renderizado en las
+              herramientas de desarrollo y revisé cómo las dependencias, la
+              limpieza de efectos y las optimizaciones influyen en la
+              actualización de los componentes.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="../js/components.js" defer></script>
+  </body>
+</html>
