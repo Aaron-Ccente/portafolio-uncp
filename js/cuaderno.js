@@ -34,6 +34,12 @@ const weeks = [
     description: "Estructuras HTML con Props y Children; desarrollo de SPA con React, Vite y consumo de API",
     image: "/assets/images/cuaderno/semana06/semana-06-actividad-02-img-02.png",
     tags: ["React", "SPA", "Vite", "Props", "Children", "CSR", "API"],
+  },
+  {
+    title: "Semana 07",
+    description: "Examen Parcial",
+    image: "/assets/images/cuaderno/semana07/semana-07-actividad-01-img-01.png",
+    tags: ["React", "SPA", "Vite", "Props", "Children", "CSR", "API"],
   }
 ];
 
