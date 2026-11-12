@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuaderno | Semana 09</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="/css/cuaderno/semana-general.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <main class="week">
+      <header class="week-header">
+        <p class="week-label">SEMANA 09</p>
+
+        <h1>Formularios, sesiones y despliegue web</h1>
+
+        <p class="week-description">
+          Desarrollo y despliegue de formularios con PHP y JSP, manejo de
+          sesiones y revisión del ciclo HTTP y de medidas básicas de seguridad
+          para aplicaciones web.
+        </p>
+      </header>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">01</span>
+
+          <div>
+            <p class="section-label">APRENDIZAJE</p>
+            <h2>Temas aprendidos</h2>
+          </div>
+        </div>
+
+        <div class="topics">
+          <article class="topic">
+            <span class="topic-number">Tema 01</span>
+
+            <h3>Formularios y procesamiento con PHP</h3>
+
+            <p>
+              Un formulario HTML envía datos al servidor mediante una solicitud
+              <strong>POST</strong>. PHP recibe los valores, los valida y
+              sanitiza antes de usarlos. En el ejercicio de préstamo se
+              procesan datos del lector, correo, libro, categoría y duración,
+              y se calcula la fecha de devolución.
+            </p>
+          </article>
+
+          <article class="topic">
+            <span class="topic-number">Tema 02</span>
+
+            <h3>Sesiones y plantillas JSP</h3>
+
+            <p>
+              <strong>$_SESSION</strong> permite conservar información
+              asociada a la sesión entre solicitudes, como una colección de
+              contactos registrados. En JSP, los parámetros de
+              <strong>request</strong> procesan el formulario y
+              <strong>session</strong> mantiene los registros para
+              presentarlos en una respuesta estructurada.
+            </p>
+          </article>
+
+          <article class="topic">
+            <span class="topic-number">Tema 03</span>
+
+            <h3>Ciclo HTTP y seguridad básica</h3>
+
+            <p>
+              El navegador envía una solicitud HTTP al servidor, que ejecuta
+              el backend y devuelve una respuesta para renderizar. Validar el
+              método y los datos recibidos, escapar la salida con
+              <strong>htmlspecialchars</strong> o <strong>&lt;c:out&gt;</strong>
+              y manejar errores 4xx y 5xx ayuda a evitar fallos y prevenir
+              XSS.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">02</span>
+
+          <div>
+            <p class="section-label">ACTIVIDADES</p>
+            <h2>Formularios con PHP y JSP</h2>
+          </div>
+        </div>
+
+        <div class="activities">
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 09 · Actividad 01</span>
+
+              <h3>Formulario de préstamo de libros en PHP</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  Se desarrolló un formulario web para registrar solicitudes
+                  de préstamo en una biblioteca. El lector ingresa sus datos,
+                  el título del libro, la categoría y los días del préstamo.
+                  El servidor procesa la solicitud y muestra la información
+                  registrada junto con la fecha de devolución.
+                </p>
+
+                <p>
+                  La actividad también aborda el levantamiento del servidor
+                  para ejecutar PHP y la importancia de validar y sanitizar
+                  los datos recibidos.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Procedimiento</h4>
+
+                <ol>
+                  <li>
+                    Preparar un formulario HTML con campos para lector, correo,
+                    libro, categoría y duración del préstamo.
+                  </li>
+                  <li>
+                    Enviar la información al servidor y comprobar que la
+                    solicitud utiliza el método esperado.
+                  </li>
+                  <li>
+                    Validar los campos y el rango de días, y sanitizar los
+                    datos antes de presentarlos.
+                  </li>
+                  <li>
+                    Procesar el préstamo y mostrar una confirmación con los
+                    datos ingresados y la fecha de devolución.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  Se evidencia el formulario de préstamo y la página de
+                  confirmación con los datos del lector, el libro, la categoría,
+                  los días solicitados y la fecha de devolución.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana09/semana-09-actividad-01-img-01.png"
+                    alt="Formulario PHP para solicitar el préstamo de un libro"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana09/semana-09-actividad-01-img-02.png"
+                    alt="Confirmación del préstamo con los datos del lector y la fecha de devolución"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 09 · Actividad 02</span>
+
+              <h3>Registro de contactos con PHP y JSP</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  Se comparó el procesamiento de un formulario de contacto en
+                  PHP y JSP. En la versión PHP, el formulario envía nombre y
+                  correo a un script que registra los datos en
+                  <strong>$_SESSION</strong> y muestra la lista de contactos.
+                  En JSP se procesa el formulario con los datos de
+                  <strong>request</strong> y se conserva la información en la
+                  sesión para devolver una respuesta estructurada.
+                </p>
+
+                <p>
+                  La actividad relaciona el envío del formulario con el ciclo
+                  de una solicitud HTTP y considera validación de entradas,
+                  prevención de XSS y diferencias entre ambos entornos.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Procedimiento</h4>
+
+                <ol>
+                  <li>
+                    Crear un formulario de contacto con nombre y correo y
+                    enviarlo al backend mediante POST.
+                  </li>
+                  <li>
+                    Procesar los parámetros y guardar el contacto en la sesión
+                    actual en PHP o JSP.
+                  </li>
+                  <li>
+                    Renderizar los registros en una tabla y escapar los valores
+                    dinámicos antes de insertarlos en el HTML.
+                  </li>
+                  <li>
+                    Revisar la solicitud y la respuesta en las herramientas de
+                    red del navegador.
+                  </li>
+                  <li>
+                    Comparar PHP y JSP considerando ciclo de vida,
+                    despliegue, rendimiento, gestión de estado y ecosistema.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  Las evidencias muestran los formularios PHP y JSP, el
+                  registro de un contacto en la sesión y la solicitud
+                  <strong>procesar.jsp</strong> observada en la pestaña de red
+                  del navegador.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana09/semana-09-actividad-02-img-01.png"
+                    alt="Formulario de contacto PHP abierto en el navegador"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana09/semana-09-actividad-02-img-02.png"
+                    alt="Formulario PHP de contacto con nombre y correo ingresados"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana09/semana-09-actividad-02-img-03.png"
+                    alt="Tabla de contactos registrados en la sesión"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana09/semana-09-actividad-02-img-04.png"
+                    alt="Formulario de contacto implementado con JSP"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana09/semana-09-actividad-02-img-05.png"
+                    alt="Solicitud procesar.jsp inspeccionada en las herramientas de red del navegador"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reflection-section">
+        <div class="section-header">
+          <span class="section-number">03</span>
+
+          <div>
+            <p class="section-label">REFLEXIÓN</p>
+            <h2>Reflexión personal</h2>
+          </div>
+        </div>
+
+        <div class="reflection">
+          <article class="reflection-item">
+            <h3>¿Qué aprendí?</h3>
+
+            <p>
+              Aprendí a conectar formularios HTML con un backend y a conservar
+              datos entre solicitudes mediante sesiones. También comprendí
+              que validar entradas, controlar el método HTTP y escapar la
+              salida son pasos esenciales para procesar información de manera
+              segura.
+            </p>
+          </article>
+
+          <article class="reflection-item">
+            <h3>¿Cómo aprendí?</h3>
+
+            <p>
+              Comparé implementaciones en PHP y JSP, seguí el recorrido desde
+              el envío del formulario hasta la respuesta del servidor y
+              observé la solicitud desde las herramientas de desarrollo del
+              navegador. Las evidencias ayudaron a relacionar el código del
+              servidor con lo que recibe y muestra el cliente.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="../js/components.js" defer></script>
+  </body>
+</html>
