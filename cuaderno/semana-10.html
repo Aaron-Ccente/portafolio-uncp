@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuaderno | Semana 10</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="/css/cuaderno/semana-general.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <main class="week">
+      <header class="week-header">
+        <p class="week-label">SEMANA 10</p>
+
+        <h1>Programación orientada a objetos y APIs REST</h1>
+
+        <p class="week-description">
+          Aplicación de principios de POO en una herramienta CLI de gestión de
+          productos y construcción y prueba de un backend REST con Express y
+          MySQL.
+        </p>
+      </header>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">01</span>
+
+          <div>
+            <p class="section-label">APRENDIZAJE</p>
+            <h2>Temas aprendidos</h2>
+          </div>
+        </div>
+
+        <div class="topics">
+          <article class="topic">
+            <span class="topic-number">Tema 01</span>
+
+            <h3>POO y herencia en Python</h3>
+
+            <p>
+              La programación orientada a objetos organiza datos y
+              comportamiento en clases. La herencia permite especializar
+              productos por categoría y el polimorfismo ofrece una interfaz
+              común para trabajar con distintos tipos. Un mixin permite
+              reutilizar capacidades mediante herencia múltiple.
+            </p>
+          </article>
+
+          <article class="topic">
+            <span class="topic-number">Tema 02</span>
+
+            <h3>Encapsulamiento y validación</h3>
+
+            <p>
+              El encapsulamiento protege el estado del producto y centraliza
+              las reglas de validación. Las excepciones personalizadas
+              comunican errores del dominio, como una categoría inválida, y
+              permiten que la aplicación responda sin perder el control del
+              flujo.
+            </p>
+          </article>
+
+          <article class="topic">
+            <span class="topic-number">Tema 03</span>
+
+            <h3>Backend REST con Express y MySQL</h3>
+
+            <p>
+              Una API REST expone recursos mediante rutas HTTP. Express
+              procesa las solicitudes y un pool de conexiones MySQL facilita
+              el acceso a la base de datos. Las respuestas JSON y sus códigos
+              de estado permiten que el cliente conozca el resultado de cada
+              operación.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">02</span>
+
+          <div>
+            <p class="section-label">ACTIVIDADES</p>
+            <h2>Gestión de productos y desarrollo backend</h2>
+          </div>
+        </div>
+
+        <div class="activities">
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 10 · Actividad 01</span>
+
+              <h3>Sistema de Gestión de Productos (CLI)</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  Se implementó una aplicación de consola en Python 3.12 o
+                  superior para administrar productos. El menú permite
+                  agregar productos, listar el inventario y calcular el precio
+                  final. El modelo aplica herencia, herencia múltiple con
+                  mixin, encapsulamiento, polimorfismo y excepciones
+                  personalizadas.
+                </p>
+
+                <p>
+                  Los productos incluyen categoría, nombre, precio base y
+                  stock; los productos electrónicos también registran meses de
+                  garantía.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Procedimiento</h4>
+
+                <ol>
+                  <li>
+                    Presentar un menú interactivo para agregar y listar
+                    productos o calcular su precio final.
+                  </li>
+                  <li>
+                    Solicitar categoría, nombre, precio y stock, además de los
+                    datos específicos requeridos por el tipo de producto.
+                  </li>
+                  <li>
+                    Validar la categoría y los valores ingresados; comunicar
+                    los datos incorrectos con una excepción personalizada.
+                  </li>
+                  <li>
+                    Crear productos mediante clases y especializaciones que
+                    reutilizan y sobrescriben comportamientos.
+                  </li>
+                  <li>
+                    Comprobar el alta correcta, el listado y el manejo de una
+                    categoría no válida desde la consola.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  Las capturas muestran el menú CLI, el registro de un producto
+                  electrónico, el listado del inventario y la validación que
+                  rechaza una categoría no admitida.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana10/semana-10-actividad-01-img-01.png"
+                    alt="Menú principal CLI para gestionar productos"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana10/semana-10-actividad-01-img-02.png"
+                    alt="Registro exitoso de un producto electrónico con precio, stock y garantía"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana10/semana-10-actividad-01-img-03.png"
+                    alt="Listado del producto registrado en el inventario"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana10/semana-10-actividad-01-img-04.png"
+                    alt="Mensaje de validación al ingresar una categoría inválida"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 10 · Actividad 02</span>
+
+              <h3>API REST de productos con Express y MySQL</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  Se implementó un backend con Node.js y Express para exponer
+                  operaciones REST sobre productos y conectarse a una base de
+                  datos relacional MySQL mediante un pool de conexiones. Las
+                  solicitudes y respuestas se verifican con una colección de
+                  pruebas HTTP en Postman.
+                </p>
+
+                <p>
+                  Las evidencias documentan la consulta de la colección,
+                  la obtención de un producto por identificador, la respuesta
+                  cuando no existe, la creación de un producto y su
+                  eliminación.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Procedimiento</h4>
+
+                <ol>
+                  <li>
+                    Configurar la conexión a MySQL con un pool y definir el
+                    recurso de productos en el servidor Express.
+                  </li>
+                  <li>
+                    Implementar rutas para listar, consultar, crear,
+                    actualizar y eliminar productos.
+                  </li>
+                  <li>
+                    Validar los datos del cuerpo de la solicitud y ejecutar
+                    las consultas parametrizadas correspondientes.
+                  </li>
+                  <li>
+                    Responder con JSON y códigos HTTP apropiados, incluidos
+                    201 para una creación y 404 cuando el producto no existe.
+                  </li>
+                  <li>
+                    Probar las solicitudes desde Postman y verificar los
+                    cuerpos y códigos de respuesta.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  La colección de Postman muestra productos obtenidos desde la
+                  API, la consulta por ID, la respuesta 404 para un producto
+                  inexistente, la creación con respuesta 201 y la eliminación
+                  correcta de un producto.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana10/semana-10-actividad-02-img-01.png"
+                    alt="Respuesta de la API con la lista de productos en Postman"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana10/semana-10-actividad-02-img-02.png"
+                    alt="Consulta de un producto por identificador y respuesta JSON"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana10/semana-10-actividad-02-img-03.png"
+                    alt="Respuesta 404 al consultar un producto inexistente"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana10/semana-10-actividad-02-img-04.png"
+                    alt="Creación de un producto con respuesta 201 en Postman"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana10/semana-10-actividad-02-img-05.png"
+                    alt="Respuesta de la API al eliminar correctamente un producto"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reflection-section">
+        <div class="section-header">
+          <span class="section-number">03</span>
+
+          <div>
+            <p class="section-label">REFLEXIÓN</p>
+            <h2>Reflexión personal</h2>
+          </div>
+        </div>
+
+        <div class="reflection">
+          <article class="reflection-item">
+            <h3>¿Qué aprendí?</h3>
+
+            <p>
+              Aprendí a estructurar una solución orientada a objetos para
+              representar productos y sus variantes, validar sus datos y
+              manejar errores de dominio. También reforcé el diseño de rutas
+              REST y el uso de códigos HTTP para comunicar el resultado de
+              operaciones sobre una base de datos.
+            </p>
+          </article>
+
+          <article class="reflection-item">
+            <h3>¿Cómo aprendí?</h3>
+
+            <p>
+              Practiqué primero las operaciones del inventario desde una
+              interfaz CLI y después observé las solicitudes y respuestas de
+              una API mediante Postman. Las pruebas de casos exitosos y de
+              recursos inexistentes ayudaron a relacionar la lógica del
+              servidor con la experiencia del cliente.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="../js/components.js" defer></script>
+  </body>
+</html>
