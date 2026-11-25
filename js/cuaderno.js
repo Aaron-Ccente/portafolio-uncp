@@ -68,6 +68,13 @@ const weeks = [
     description: "Aplicaciones web con Django 5, patrón MTV, ORM, plantillas y catálogo de productos",
     image: "/assets/images/cuaderno/semana11/semana-11-actividad-02-img-02.png",
     tags: ["Django", "Python", "MTV", "ORM", "SQLite", "CBV"],
+  },
+  {
+    number: 12,
+    title: "Semana 12",
+    description: "Formularios, Django Admin, middleware, autenticación y gestión de datos con seguridad",
+    image: "/assets/images/cuaderno/semana12/semana-12-actividad-01-img-02.png",
+    tags: ["Django", "Admin", "Forms", "Middleware", "Seguridad", "Roles"],
   }
 ];
 
