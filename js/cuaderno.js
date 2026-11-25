@@ -59,8 +59,15 @@ const weeks = [
     number: 10,
     title: "Semana 10",
     description: "POO con Python y desarrollo de una API REST de productos con Express y MySQL",
-    image: "/assets/images/cuaderno/semana09/semana-10-actividad-01-img-02.png",
+    image: "/assets/images/cuaderno/semana10/semana-10-actividad-01-img-02.png",
     tags: ["Python", "POO", "Node.js", "Express", "REST", "MySQL"],
+  },
+  {
+    number: 11,
+    title: "Semana 11",
+    description: "Aplicaciones web con Django 5, patrón MTV, ORM, plantillas y catálogo de productos",
+    image: "/assets/images/cuaderno/semana11/semana-11-actividad-02-img-02.png",
+    tags: ["Django", "Python", "MTV", "ORM", "SQLite", "CBV"],
   }
 ];
 
