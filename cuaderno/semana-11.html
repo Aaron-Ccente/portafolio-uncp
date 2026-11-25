@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuaderno | Semana 11</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="/css/cuaderno/semana-general.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <main class="week">
+      <header class="week-header">
+        <p class="week-label">SEMANA 11</p>
+
+        <h1>Django 5 y arquitectura MTV</h1>
+
+        <p class="week-description">
+          Construcción de aplicaciones web con Django, enrutamiento, vistas,
+          plantillas, ORM, migraciones y persistencia de datos en SQLite.
+        </p>
+      </header>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">01</span>
+
+          <div>
+            <p class="section-label">APRENDIZAJE</p>
+            <h2>Temas aprendidos</h2>
+          </div>
+        </div>
+
+        <div class="topics">
+          <article class="topic">
+            <span class="topic-number">Tema 01</span>
+
+            <h3>Arquitectura Model-Template-View</h3>
+
+            <p>
+              Django organiza la aplicación mediante el patrón MTV. Los modelos
+              representan los datos, las plantillas generan la presentación y
+              las vistas coordinan las solicitudes. El proyecto y las
+              aplicaciones mantienen una estructura modular y configurable.
+            </p>
+          </article>
+
+          <article class="topic">
+            <span class="topic-number">Tema 02</span>
+
+            <h3>URLs y vistas basadas en funciones y clases</h3>
+
+            <p>
+              El archivo urls.py relaciona rutas con vistas y permite asignar
+              nombres reutilizables. Las FBV ofrecen lógica explícita y las CBV
+              reutilizan comportamientos comunes, como ListView para mostrar
+              colecciones de registros.
+            </p>
+          </article>
+
+          <article class="topic">
+            <span class="topic-number">Tema 03</span>
+
+            <h3>Plantillas, ORM y persistencia</h3>
+
+            <p>
+              Las plantillas permiten herencia, bloques, ciclos, condicionales
+              y filtros. El ORM traduce operaciones Python a consultas sobre
+              SQLite y las migraciones mantienen sincronizado el esquema con
+              los modelos definidos.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">02</span>
+
+          <div>
+            <p class="section-label">ACTIVIDADES</p>
+            <h2>Desarrollo web con Django</h2>
+          </div>
+        </div>
+
+        <div class="activities">
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 11 · Actividad 01</span>
+
+              <h3>Configuración y primera aplicación Django</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  Se configuró un proyecto Django 5.x dentro de un entorno
+                  virtual con Python 3.11 o superior. La aplicación aplica el
+                  patrón MTV, usa un sistema de rutas y prepara la
+                  configuración para plantillas, modelos, formularios, panel
+                  administrativo y sesiones.
+                </p>
+
+                <p>
+                  El trabajo comprende la instalación del framework, la
+                  ejecución del servidor, una vista de bienvenida y el acceso
+                  al administrador para crear registros desde la interfaz
+                  gráfica.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Procedimiento</h4>
+
+                <ol>
+                  <li>
+                    Crear y activar un entorno virtual, instalar Django 5 y
+                    generar el proyecto y la aplicación correspondientes.
+                  </li>
+                  <li>
+                    Configurar settings.py, la estructura de plantillas y los
+                    archivos urls.py del proyecto y de la aplicación.
+                  </li>
+                  <li>
+                    Implementar vistas basadas en funciones y clases y validar
+                    el ciclo solicitud-respuesta desde el navegador.
+                  </li>
+                  <li>
+                    Ejecutar makemigrations y migrate para crear las tablas
+                    requeridas por Django y por los modelos personalizados.
+                  </li>
+                  <li>
+                    Comprobar el servidor, iniciar sesión en Django
+                    administration y registrar un producto desde el panel.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  Las capturas verifican la instalación, la página de inicio,
+                  el acceso administrativo y el formulario para añadir un
+                  producto con nombre, descripción, precio, stock y estado.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana11/semana-11-actividad-01-img-01.png"
+                    alt="Pantalla de instalación correcta de Django"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana11/semana-11-actividad-01-img-02.png"
+                    alt="Página de bienvenida de la tienda Django"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana11/semana-11-actividad-01-img-03.png"
+                    alt="Inicio de sesión del panel Django administration"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana11/semana-11-actividad-01-img-04.png"
+                    alt="Formulario administrativo para añadir un producto"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 11 · Actividad 02</span>
+
+              <h3>Catálogo de Productos Tecnológicos</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  Se desarrolló un catálogo con arquitectura MTV y una aplicación
+                  separada del proyecto principal. Incluye una vista de
+                  bienvenida basada en FBV y un catálogo construido con la CBV
+                  ListView.
+                </p>
+
+                <p>
+                  El modelo Producto registra nombre, descripción, precio,
+                  categoría, stock y estado activo. Los datos persisten en
+                  SQLite y la plantilla utiliza herencia, rutas nombradas,
+                  filtros, ciclos y condicionales para presentar los productos.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Procedimiento</h4>
+
+                <ol>
+                  <li>
+                    Separar el proyecto Django de la aplicación Catálogo y
+                    configurar settings.py con las rutas de plantillas.
+                  </li>
+                  <li>
+                    Crear una ruta principal con una FBV de bienvenida y una
+                    ruta /catalogo/ asociada a ListView.
+                  </li>
+                  <li>
+                    Diseñar base.html y catalogo.html con herencia, bloques,
+                    encabezado, pie de página y enlaces nombrados.
+                  </li>
+                  <li>
+                    Definir el modelo Producto, crear las migraciones y cargar los
+                    datos desde SQLite mediante el ORM.
+                  </li>
+                  <li>
+                    Filtrar el QuerySet, ordenar los productos y comprobar las
+                    categorías y el estado de stock desde la interfaz.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  La evidencia muestra la página principal, el listado completo
+                  de diez productos, el filtro por categoría y un ejemplo de
+                  consulta filtrada que muestra solo los discos SSD disponibles.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana11/semana-11-actividad-02-img-01.png"
+                    alt="Página principal del catálogo de productos tecnológicos"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana11/semana-11-actividad-02-img-02.png"
+                    alt="Listado completo de diez productos tecnológicos"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana11/semana-11-actividad-02-img-03.png"
+                    alt="Catálogo filtrado por categoría Almacenamiento"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reflection-section">
+        <div class="section-header">
+          <span class="section-number">03</span>
+
+          <div>
+            <p class="section-label">REFLEXIÓN</p>
+            <h2>Reflexión personal</h2>
+          </div>
+        </div>
+
+        <div class="reflection">
+          <article class="reflection-item">
+            <h3>¿Qué aprendí?</h3>
+
+            <p>
+              Aprendí a estructurar una aplicación Django siguiendo el patrón
+              MTV, relacionar URLs con vistas FBV y CBV y usar modelos con el
+              ORM para consultar y persistir datos. También comprendí cómo las
+              plantillas reutilizables permiten presentar información real
+              desde SQLite.
+            </p>
+          </article>
+
+          <article class="reflection-item">
+            <h3>¿Cómo aprendí?</h3>
+
+            <p>
+              Practiqué desde la instalación y configuración inicial hasta la
+              creación de migraciones y registros administrativos. Después
+              desarrollé el catálogo completo y probé filtros por categoría y
+              disponibilidad, verificando que las plantillas mostraran los
+              datos obtenidos por Django.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="../js/components.js" defer></script>
+  </body>
+</html>
