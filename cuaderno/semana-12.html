@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuaderno | Semana 12</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="/css/cuaderno/semana-general.css" />
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <main class="week">
+      <header class="week-header">
+        <p class="week-label">SEMANA 12</p>
+
+        <h1>Seguridad y gestión de datos en Django</h1>
+
+        <p class="week-description">
+          Implementación de formularios robustos, validaciones, Django Admin,
+          middleware, autenticación, autorización y protección de aplicaciones
+          web en proyectos reales.
+        </p>
+      </header>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">01</span>
+
+          <div>
+            <p class="section-label">APRENDIZAJE</p>
+            <h2>Temas aprendidos</h2>
+          </div>
+        </div>
+
+        <div class="topics">
+          <article class="topic">
+            <span class="topic-number">Tema 01</span>
+
+            <h3>Formularios y validación de datos</h3>
+
+            <p>
+              Django permite construir formularios clásicos y ModelForm para
+              vincular datos con los modelos. Las validaciones clean(),
+              clean_<campo>() y los validadores personalizados forman una
+              estrategia por niveles que evita registros incorrectos y sanitiza
+              la información recibida.
+            </p>
+          </article>
+
+          <article class="topic">
+            <span class="topic-number">Tema 02</span>
+
+            <h3>Django Admin y administración operativa</h3>
+
+            <p>
+              El panel administrativo centraliza la gestión de productos,
+              usuarios y datos auditables. La personalización con registros,
+              filtros, búsquedas, campos calculados y acciones masivas mejora
+              el control operativo y reduce tareas manuales.
+            </p>
+          </article>
+
+          <article class="topic">
+            <span class="topic-number">Tema 03</span>
+
+            <h3>Seguridad, sesiones y autorización</h3>
+
+            <p>
+              El middleware intercepta las solicitudes y respuestas para aplicar
+              reglas transversales. La autenticación login/logout, el
+              decorador login_required, los roles y permisos, junto con la
+              protección CSRF y sesiones seguras, permiten controlar el acceso.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">02</span>
+
+          <div>
+            <p class="section-label">ACTIVIDADES</p>
+            <h2>Gestión segura y casos aplicados</h2>
+          </div>
+        </div>
+
+        <div class="activities">
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 12 · Actividad 01</span>
+
+              <h3>Ciclo completo de seguridad y administración Django</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  Se desarrolló una práctica integral en Django 5.x que combina
+                  formularios clásicos y ModelForm, validaciones de campo y
+                  modelo, sanitización de entradas y manejo estructurado de
+                  errores. La aplicación también incorpora Django Admin,
+                  middleware, sesiones y controles de autenticación.
+                </p>
+
+                <p>
+                  El módulo administrativo permite gestionar usuarios, grupos,
+                  categorías, productos y registros de auditoría. Se configuraron
+                  búsquedas, filtros y acciones masivas para revisar el catálogo
+                  de forma operativa.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Procedimiento</h4>
+
+                <ol>
+                  <li>
+                    Diseñar formularios y aplicar validación en tres niveles:
+                    formulario, campo individual y modelo.
+                  </li>
+                  <li>
+                    Integrar los formularios con plantillas y presentar mensajes
+                    claros sin exponer información sensible.
+                  </li>
+                  <li>
+                    Registrar los modelos en Django Admin y configurar filtros,
+                    búsquedas, columnas calculadas y operaciones masivas.
+                  </li>
+                  <li>
+                    Implementar middleware para interceptar solicitudes y
+                    respuestas, mantener sesiones seguras y auditar acciones.
+                  </li>
+                  <li>
+                    Configurar autenticación, autorización por roles y permisos,
+                    cierre de sesión y protección CSRF.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  Las evidencias muestran el inicio de sesión administrativo,
+                  los módulos operativos disponibles, el listado de productos con
+                  filtros y el formulario validado para crear un nuevo producto.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana12/semana-12-actividad-01-img-01.png"
+                    alt="Inicio de sesión del panel administrativo de Django"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana12/semana-12-actividad-01-img-02.png"
+                    alt="Módulos de gestión y auditoría del Django Admin"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana12/semana-12-actividad-01-img-03.png"
+                    alt="Listado y filtrado de productos desde el panel administrativo"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana12/semana-12-actividad-01-img-04.png"
+                    alt="Formulario con validación para crear un producto"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="activity">
+            <div class="activity-header">
+              <span class="activity-number">Semana 12 · Actividad 02</span>
+
+              <h3>Proyectos funcionales aplicados a tres casos reales</h3>
+            </div>
+
+            <div class="activity-content">
+              <div class="activity-block">
+                <h4>Descripción</h4>
+
+                <p>
+                  Se desarrollaron tres propuestas web para resolver necesidades
+                  relacionadas con la gestión de equipos, consultas médicas y
+                  control de asistencia laboral. Los casos aplican formularios
+                  Django, autenticación, permisos, auditoría y interfaces
+                  adaptadas a cada usuario.
+                </p>
+              </div>
+
+              <div class="activity-block">
+                <h4>Procedimiento</h4>
+
+                <ol>
+                  <li>
+                    Caso 1: implementar el control de préstamos de equipos y
+                    laboratorios de la UNCP con trazabilidad de dispositivos,
+                    usuarios y estados.
+                  </li>
+                  <li>
+                    Caso 2: construir la plataforma de citas médicas con
+                    especialidades, médicos, horarios, pacientes y validación
+                    de disponibilidad.
+                  </li>
+                  <li>
+                    Caso 3: diseñar el sistema de permisos y vacaciones de
+                    TecnoAndes con empleados, áreas, autenticación jerárquica,
+                    middleware y auditoría en Django Admin.
+                  </li>
+                </ol>
+              </div>
+
+              <div class="activity-block">
+                <h4>Resultados</h4>
+
+                <p>
+                  Las interfaces verifican la gestión de préstamos, el
+                  agendamiento de citas médicas y la solicitud de permisos,
+                  mostrando validaciones y controles propios de cada caso.
+                </p>
+
+                <div class="result-images">
+                  <img
+                    src="/assets/images/cuaderno/semana12/semana-12-actividad-02-img-01.png"
+                    alt="Sistema de gestión de préstamos de equipos de laboratorio"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana12/semana-12-actividad-02-img-02.png"
+                    alt="Formulario de agendamiento de una cita médica"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/assets/images/cuaderno/semana12/semana-12-actividad-02-img-03.png"
+                    alt="Formulario de solicitud de permiso o vacaciones"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reflection-section">
+        <div class="section-header">
+          <span class="section-number">03</span>
+
+          <div>
+            <p class="section-label">REFLEXIÓN</p>
+            <h2>Reflexión personal</h2>
+          </div>
+        </div>
+
+        <div class="reflection">
+          <article class="reflection-item">
+            <h3>¿Qué aprendí?</h3>
+
+            <p>
+              Aprendí a validar datos en distintos niveles, personalizar el
+              Django Admin y proteger los procesos mediante autenticación,
+              permisos, sesiones, CSRF y middleware. También comprendí cómo
+              adaptar estas herramientas a problemas organizados por roles y
+              responsabilidades.
+            </p>
+          </article>
+
+          <article class="reflection-item">
+            <h3>¿Cómo aprendí?</h3>
+
+            <p>
+              Realicé una práctica técnica completa y después apliqué sus
+              componentes en tres casos: préstamos de laboratorio, citas médicas
+              y permisos laborales. Las interfaces y las validaciones permitieron
+              verificar el funcionamiento y relacionarlo con necesidades reales.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="../js/components.js" defer></script>
+  </body>
+</html>
